@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ErrorComponent } from './error/error.component';
 import { ListToDoComponent } from './list-to-do/list-to-do.component';
 import { LogoutComponent } from './logout/logout.component';
+import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
 {path: '', component: LoginComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
 {path: 'welcome', component: WelcomeComponent},
 {path: 'todos', component: ListToDoComponent},
 {path: 'logout', component: LogoutComponent},
+{path: 'todos/:id', component: TodoComponent},
 {path: '**', component: ErrorComponent}
 ];
 
